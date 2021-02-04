@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 
-    <title>Hello, world!</title>
+    <title>Planet Blog!</title>
 </head>
 
 <body>
@@ -43,36 +43,39 @@
         </div>
     </nav>
 
-    <div class="container-fluid bg-grey">
-        <h2 class="text-center">Speak to Us/h2>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center">Speak to Us</h1>
+                <p>We are the team that brings that de-javu effect! We see the future more than we see the past or belive in the present.</p>
+            </div>
             <div class="row">
-                <div class="col-sm-5">
-                    <p>Contact us and we'll get back to you within 24 hours. We love hearing from you.</p>
-                    <p><span class="glyphicon glyphicon-map-marker"></span> Plot 31, Ntinda complex, Ntinda, Kampala, Uganda</p>
-                    <p><span class="glyphicon glyphicon-phone"></span> +256-705590070</p>
-                    <p><span class="glyphicon glyphicon-envelope"></span> customercare@planetblog.com</p>
-                </div>
-                <div class="col-sm-7">
-                    <div class="row">
-                        <div class="col-sm-6 form-group">
-                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-                        </div>
-                        <div class="col-sm-6 form-group">
-                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                <div class="col">
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <input class="form-control" id="name" name="name" placeholder="Your Name" type="text" required>
                         </div>
                     </div>
-                    <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-                    <div class="row">
-                        <div class="col-sm-12 form-group">
-                            <button class="btn btn-default pull-right" type="submit">Send</button>
+
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <input class="form-control" id="email" name="email" placeholder="Email address" type="email" required>
                         </div>
+                    </div>
+
+
+                    <div class="form-group ">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <textarea class="form-control" id="comments" name="comments" placeholder="your message goes here" rows="5"></textarea>
+                        </div> &nbsp; &nbsp;
+                        <div class="col"><button class="btn btn-outline-success" type="submit">Send</button></div>
                     </div>
                 </div>
             </div>
-    </div>
 
-    <script src="/js/bootstrap.bundle.js ">
-    </script>
+            <script src="/js/bootstrap.bundle.js ">
+            </script>
 </body>
 
 </html>
