@@ -46,7 +46,7 @@
             <div class="md-3">
                 <label for="validationCustom04" class="form-label">Location</label>
                 <select class="form-select" id="validationCustom04" required>
-  <option selected disabled value="">Choose...</option>
+  <option selected disabled value="">Choose a location</option>
   <option>Ntinda</option>
   <option>Muyenga</option>
   <option>Nakawa</option>
@@ -61,30 +61,59 @@
             </div>
 
             <div class="md-3">
-                <label for="validationCustom04" class="form-label">Service requested</label>
-                <select class="form-select" id="validationCustom04" required>
-  <option selected disabled value="">Choose...</option>
+                <label for="ServiceRequested" class="form-label">Service Requested</label>
+                <select class="form-select" id="ServiceRequested" required>
+  <option selected disabled value="">Choose service(s)</option>
   <option>Garbage Collection</option>
   <option>Sewage Collection</option>
-            </select>
+  <option>Both</option>
+                  <div class="invalid-feedback">
+                    Please select a valid service.
+                </div>
+                </select>
             </div>
 
-            <div class="mb-3">
+            <div class="md-3">
                 <label for="exampleFormControlInput1" class="form-label">National Id Number</label>
                 <input type="IdNumber" class="form-control" id="exampleFormControlInput1" placeholder="CXXXXXXXXXXXX">
+            </div>
+
+            <div class="form-group" class="md-3">
+                <label for="sel1">Number of trucks needed</label>
+                <select class="form-control" id="sel1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                </select>
             </div>
 
             <form method="post">
                 <div class="form-group">
                     <!-- Date input -->
-                    <label class="control-label" for="date">Date</label>
-                    <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text" />
+                    <label class="control-label" for="time">Time requested</label>
+                    <input class="form-control" id="time" name="time" placeholder="HH/MM" type="time" />
                 </div>
 
 
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
-                    <input type="PhoneNumber" class="form-control" id="exampleFormControlInput1" placeholder="+256700000000">
+                    <label for="PhoneNumber" class="form-label">Phone Number</label>
+                    <input type="PhoneNumber" class="form-control" id="PhoneNumber" placeholder="+256700000000">
+                </div>
+
+                <div class="radio" class="md-3">
+                    <label for="radio" class="form-label">Type of Request</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio"> Subscription </label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio" > One-time </label>
                 </div>
 
                 <div class="col-12">
