@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        //-  Required meta tags 
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width,initial-scale=1")
+
+        link(href="css/bootstrap.min.css", rel="stylesheet")
+        link(href="css/bootstrap.css", rel="stylesheet")
+        title Stay Clean Initiative
+    body
+
+        nav.navbar.navbar-expand-lg.navbar-grey.bg-blue
+        .container
+        a.navbar-brand(href="Homepage.html") Stay Clean Initiative
+        button.navbar-toggler(type="button", data-bs-toggle="collapse", data-bs-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
+        span.navbar-toggler-icon
+        .collapse.navbar-collapse.justify-content-end#navbarSupportedContent
+        ul.navbar-nav.me-auto.mb-2.mb-lg-0.
+        
+        
+        form.container
+            .container-fluid
+            h1 Service Request Form
+            .row
+            label.form-label(for="exampleFormControlInput1") Customer Names
+            .col
+            input.form-control(type="text", placeholder="First name", aria-label="First name")
+            .col
+            input.form-control(type="text", placeholder="Last name", aria-label="Last name")
+            .md-3
+            label.form-label(for="validationCustom04") Location
+            select.form-select#validationCustom04(required)
+            option(selected, disabled, value) Choose a location
+            option Ntinda
+            option Muyenga
+            option Nakawa
+            option Kansanga
+            option Muyenga
+            option Bukoto
+            option Kololo
+            | 
+ 
+
+            Please select a valid City.
+
+
+            .md-3
+            label.form-label(for="ServiceRequested") Service Requested
+            select.form-select#ServiceRequested(required)
+            option(selected, disabled, value) Choose service(s)
+            option Garbage Collection
+            option Sewage Collection
+            option Both
+            | 
+
+            Please select a valid service.
+
+
+            .md-3
+            label.form-label(for="exampleFormControlInput1") National Id Number
+            input.form-control#exampleFormControlInput1(type="IdNumber", placeholder="CXXXXXXXXXXXX")
+            .form-group
+            label(for="sel1") Number of trucks needed
+            select.form-control#sel1
+            option 1
+            option 2
+            option 3
+            option 4
+            option 5
+            option 6
+            option 7
+            option 8
+            option 9
+        .form-group
+    
+            label.control-label(for="time") Time requested
+            input.form-control#time(name="time", placeholder="HH/MM", type="time")
+            .mb-3
+            label.form-label(for="PhoneNumber") Phone Number
+            input.form-control#PhoneNumber(type="PhoneNumber", placeholder="+256700000000")
+            .radio
+            label.form-label(for="radio") Type of Request
+            .radio
+            label
+            input(type="radio", name="optradio")
+            |  Subscription
+            .radio
+            label
+            input(type="radio", name="optradio")
+            |  One-time
+            .col-12
+            .form-check
+            input.form-check-input#invalidCheck(type="checkbox", required)
+            label.form-check-label(for="invalidCheck").
+        
+                I have read and agree to the terms and conditions
+        
+            .invalid-feedback.
+        
+                You must agree before submitting.
+        
+            .col-12
+            button.btn.btn-primary(type="submit") Submit Form
+    script(src="./js/bootstrap.bundle.js").
+  
+  
