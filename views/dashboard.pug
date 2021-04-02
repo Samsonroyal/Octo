@@ -1,15 +1,20 @@
-meta(charset="utf-8")
-meta(name="viewport", content="width=device-width,initial-scale=1")
-meta(name="description", content)
-meta(name="author", content="Mark Otto, Jacob Thornton, and Bootstrap contributors")
-meta(name="generator", content="Hugo 0.80.0")
-title StayClean Initiative Dashboard
-link(rel="canonical", href="https://getbootstrap.com/docs/5.0/examples/dashboard/")
-//  Bootstrap core CSS 
-link(href="../assets/dist/css/bootstrap.min.css", rel="stylesheet")
-style.
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width,initial-scale=1")
+        meta(name="description", content)
+        meta(name="author", content="Mark Otto, Jacob Thornton, and Bootstrap contributors")
+        meta(name="generator", content="Hugo 0.80.0")
+        title StayClean Initiative Dashboard
+    body
+
+        link(rel="canonical", href="https://getbootstrap.com/docs/5.0/examples/dashboard/")
+        //-   Bootstrap core CSS 
+        link(href="../public./", rel="stylesheet")
+    style.
   
-  .bd-placeholder-img {
+    .bd-placeholder-img {
               font-size: 1.125rem;
               text-anchor: middle;
               -webkit-user-select: none;
@@ -23,19 +28,19 @@ style.
               }
           }
   
-//  Custom styles for this template 
-link(href="dashboard.css", rel="stylesheet")
-header.navbar.navbar-dark.sticky-top.bg-dark.flex-md-nowrap.p-0.shadow
-  a.navbar-brand.col-md-3.col-lg-2.me-0.px-3(href="#") Stay Clean Initiative
-  button.navbar-toggler.position-absolute.d-md-none.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#sidebarMenu", aria-controls="sidebarMenu", aria-expanded="false", aria-label="Toggle navigation")
-    span.navbar-toggler-icon
-  input.form-control.form-control-dark.w-100(type="text", placeholder="Search", aria-label="Search")
-  ul.navbar-nav.px-3
-    li.nav-item.text-nowrap
-      a.nav-link(href="#") Sign out
-.container-fluid
-  .row
-    nav#sidebarMenu.col-md-3.col-lg-2.d-md-block.bg-light.sidebar.collapse
+            //-  Custom styles for this template 
+        link(href="dashboard.css", rel="stylesheet")
+        header.navbar.navbar-dark.sticky-top.bg-dark.flex-md-nowrap.p-0.shadow
+        a.navbar-brand.col-md-3.col-lg-2.me-0.px-3(href="#") Stay Clean Initiative
+        button.navbar-toggler.position-absolute.d-md-none.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#sidebarMenu", aria-controls="sidebarMenu", aria-expanded="false", aria-label="Toggle navigation")
+        span.navbar-toggler-icon
+        input.form-control.form-control-dark.w-100(type="text", placeholder="Search", aria-label="Search")
+        ul.navbar-nav.px-3
+        li.nav-item.text-nowrap
+        a.nav-link(href="#") Sign out
+        .container-fluid
+        .row
+        nav#sidebarMenu.col-md-3.col-lg-2.d-md-block.bg-light.sidebar.collapse
       .position-sticky.pt-3
         ul.nav.flex-column
           li.nav-item
@@ -103,7 +108,7 @@ header.navbar.navbar-dark.sticky-top.bg-dark.flex-md-nowrap.p-0.shadow
           button.btn.btn-sm.btn-outline-secondary.dropdown-toggle(type="button")
             span(data-feather="calendar")
             | 
-This week
+                    This week
 
       canvas.my-4.w-100#myChart(width="900", height="380")
       h2 Section title
@@ -210,4 +215,4 @@ script(src="offcanvas.js")
 script(src="../assets/dist/js/bootstrap.bundle.min.js")
 script(src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js", integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE", crossorigin="anonymous")
 script(src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js", integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha", crossorigin="anonymous")
-script(src="dashboard.js")
+script(src="../public./dasboard.js")
