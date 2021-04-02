@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/employeeRoutes', (req, res) => {
-    res.render('employeeRoutes');
+router.get('/home', (req, res) => {
+    res.render('home');
 });
 
 router.post('/', (req, res) => {

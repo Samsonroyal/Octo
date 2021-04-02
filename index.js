@@ -2,8 +2,11 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const path = require("path");
+const home = require('./routes/home');
 const loginroute = require('./routes/login');
-const employeeRoutes = require('./routes/employeeRoutes');
+const employeeReg = require('./routes/employeeReg');
+const dashboardRoute = require('./routes/dashboardRoute');
+const serviceReq = require('./routes/serviceReq');
 const { Server } = require('http');
 
 // Instantiations
@@ -12,6 +15,7 @@ const app = express();
 //Configurations
 app.set('view engine', 'pug');
 app.set('views', './views');
+app.set('routes', '/routes');
 
 //middleware
 app.use(express.static(path.join(__dirname, "public")));
@@ -27,8 +31,12 @@ app.use((req, res, next) => {
 app.use(express.static('public'));
 
 // Routes
+app.use('/home', home);
 app.use('/login', loginroute);
-app.use('/employee', employeeRoutes);
+app.use('/dashboardRoute', dashboardRoute);
+app.use('/employeeReg', employeeReg);
+app.use('/serviceReq', serviceReq);
+
 
 // cater for undefined routes
 app.get('*', (req, res) => {
