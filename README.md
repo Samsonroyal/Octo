@@ -10,7 +10,8 @@ It accepts data from forms, stores the data in a database
 and avails the data when required or requested for.
 Anything ranging from Employee data, client data and 
 Even their salary calculations 
-//-----------/-------------//
+//
+
 I hope 🤞🏼 you love it 😍 
 
 Regards,
